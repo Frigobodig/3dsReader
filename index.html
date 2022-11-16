@@ -64,11 +64,16 @@
             margin-left: auto;
         }
 
+        #textDiv {
+            height: calc(100% - 25px);
+        }
+
         #buttonsDiv {
-            height: 50px;
+            height: 25px;
             width: auto;
-            right: calc(100% - 50px);
             background-color: aqua;
+
+            text-align: right;
         }
     </style>
 </head>
@@ -82,10 +87,15 @@
             </h3>
         </div>
         <div id="diveBtm">
-            <h3 id="topText">On that note, we bouta spin some disc too-nite! *ye-yeah sound effect plays as Why Don't We
-                starts to play*
-            </h3>
+            <div id="textDiv">
+                <h3 id="topText">On that note, we bouta spin some disc too-nite! *ye-yeah sound effect plays as Why
+                    Don't We
+                    starts to play*
+                </h3>
+            </div>
             <div id="buttonsDiv">
+                <button>🠔</button>
+                <button>🠖</button>
             </div>
         </div>
     </div>
