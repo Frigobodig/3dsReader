@@ -10,22 +10,35 @@
         /*When sizing divs, account for UI size*/
         /*-25px for UI|Total 240px*/
         #diveTop {
-            width: 400px;
-            height: 215px;
+            -webkit-transform: rotate(90deg);
+            width: 215px;
+            height: 400px;
             background-color: green;
+
+            position: absolute;
+
+            top: -93px;
+            left: 93px;
         }
 
         /*-28px for UI|Total 240px*/
         #diveBtm {
-            width: 320px;
-            height: 212px;
+            -webkit-transform: rotate(90deg);
+            width: 212px;
+            height: 320px;
             background-color: red;
             margin-left: 40px;
+
+            position: absolute;
+
+            top: 161px;
+            left: 54px;
         }
 
         #bigDiv {
             background-color: blue;
             width: fit-content;
+            position: absolute;
         }
 
         body {
@@ -34,14 +47,27 @@
         }
 
         #topText {
-            writing-mode: vertical-lr;
-            padding-right: 5px;
+            padding-left: 5px;
             padding-top: 5px;
             padding-bottom: 5px;
-            margin-left: auto;
-            margin-right: 0;
-            display: flex;
+            margin-top: 0px;
             text-overflow: ellipsis;
+
+            font-family: cursive;
+        }
+
+        #testPic {
+            width: 100px;
+            height: 100px;
+
+            margin-left: auto;
+        }
+
+        #buttonsDiv {
+            height: 50px;
+            width: auto;
+            left: 0px;
+            background-color: aqua;
         }
     </style>
 </head>
@@ -49,13 +75,17 @@
 <body>
     <div id="bigDiv">
         <div id="diveTop">
-            <h3 id="topText">Aight, Whats poppin glizzy gang, I'm comin' in from New Detroit
-                in da year of 2088. Just comin' in here to say: although nuclear war has ravaged our country, we shall
-                build back stronger and mighter than before.
+            <h3 id="topText">Aight, Whats poppin glizzy gang, I'm comin' in from New Detroit in da year of 2088. Just
+                comin' in here to say: although nuclear war has ravaged our country, we shall build back stronger and
+                mighter than before.
             </h3>
         </div>
         <div id="diveBtm">
-            <img src="https://media.tenor.com/oDe2jj5GT6AAAAAM/wolf-aoogah.gif" alt="">
+            <h3 id="topText">On that note, we bouta spin some disc too-nite! *ye-yeah sound effect plays as Why Don't We
+                starts to play*
+            </h3>
+            <div id="buttonsDiv">
+            </div>
         </div>
     </div>
 
